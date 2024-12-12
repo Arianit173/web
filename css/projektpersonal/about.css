@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0056b3;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
