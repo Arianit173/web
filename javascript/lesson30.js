@@ -20,16 +20,46 @@
 
 // }
 
-var input=document.getElementById("input");
-var btn=document.getElementById("btn");
-var h1=document.getElementById("h1");
+// var input=document.getElementById("input");
+// var btn=document.getElementById("btn");
+// var h1=document.getElementById("h1");
 
-btn.onclick=function(){
-    if(input.value >10){
-        h1.innerHTML="Input value is greater than 10";
-    }else if(input.value <10){
-        h1.innerHTML="Input value is less than 10";
-    }else{
-        h1.innerHTML="Input value is equal to 10";
-    }
+// btn.onclick=function(){
+//     if(input.value >10){
+//         h1.innerHTML="Input value is greater than 10";
+//     }else if(input.value <10){
+//         h1.innerHTML="Input value is less than 10";
+//     }else{
+//         h1.innerHTML="Input value is equal to 10";
+//     }
+// }
+  var oneSecond= 1000;
+     setInterval(showCurrentTime, oneSecond);
+
+function showCurrentTime(){
+    var clock =document.getElementById('clock');
+    var currentTime=new Date();
+    var hours=currentTime.getHours();
+    var minutes=currentTime.getMinutes();
+    var seconds=currentTime.getSeconds();
+    // var noon= currentTime.getDay();
+
+    var meridian="AM";
+
+    // if(hours >= noon){
+    //     meridian="PM";
+    // }
+
+    var clockTime= hours + ":" + minutes + ":" + seconds + " " + meridian;
+    clock.innerText = clockTime;
+   
 }
+
+function changeImage(){
+    var time=new Date().getHours();
+    console.log(time);
+    
+}
+
+
+s
