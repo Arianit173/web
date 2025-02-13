@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style35.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <title>Lesson 35</title>
 </head>
 <body>
@@ -15,7 +16,24 @@
         <a href="prev"><img src="foto/image2.jpg" style="width: 50px; height: 50px;" onclick="plusSlide(-1)"></a> 
         <a href="next"><img src="foto/image3.jpg" style="width: 50px; height: 50px;"onclick="plusSlide(1)"></a>
     </div> -->
+    <nav>
+        <img src="foto/logo2.jpg" style="width:60px; height:60px">
+        <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+        <button class="icon" onclick="openMenu()">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </button>
+    </nav>
 
+    <br>
+    <br>
+    <br>
+    <br>
     <input type="text" id="myInput" onkeyup="search()" placeholder="Search for names...">
     <ul id="myList">
         <li>Ana</li>
